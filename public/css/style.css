@@ -1,0 +1,24 @@
+body, td, th, button, input[type="submit"] {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+	border: #555 1px solid;
+}
+
+input[type="text"].error,
+input[type="number"].error,
+input[type="email"].error {
+	border: #B00 1px solid;
+}
+
+.success {
+	color: #090;
+}
+
+.errors {
+	color: #B00;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "io-ts-form-example",
+  "version": "1.0.0",
+  "description": "io-ts Form Validation Example",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server -p 3000 public",
+    "compile": "browserify --debug src/main.ts -p [ tsify --project src/tsconfig.json ] -o public/js/app.js",
+    "build": "browserify src/main.ts -p [ tsify --project src/tsconfig.json ] | uglifyjs -cm -o public/js/app.js",
+    "watch": "watchify -v --debug src/main.ts -p [ tsify --project src/tsconfig.json ] -o public/js/app.js",
+    "start": "run-p watch serve",
+    "clean": "rm -f public/js/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "io-ts": "^1.0.5",
+    "mithril": "^1.1.6"
+  },
+  "devDependencies": {
+    "@types/mithril": "^1.1.12",
+    "browserify": "^16.2.0",
+    "http-server": "^0.11.1",
+    "npm-run-all": "^4.1.2",
+    "tsify": "^4.0.0",
+    "tslint": "^4.5.1",
+    "typescript": "^2.8.3",
+    "uglify-js": "^3.3.21",
+    "watchify": "^3.11.0"
+  }
+}
