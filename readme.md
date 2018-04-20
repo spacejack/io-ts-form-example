@@ -2,7 +2,9 @@
 
 This is a minimalist example of using [io-ts](https://github.com/gcanti/io-ts) for form validation.
 
-See a [live example here](https://stackblitz.com/edit/typescript-b9fxb4).
+See a [live demo here](https://stackblitz.com/edit/typescript-b9fxb4).
+
+(Note that Stackblitz's types may not be as good as browsing sources locally in VSCode.)
 
 Validation objects and corresponding TypeScript types are declared in `user.ts`.
 
